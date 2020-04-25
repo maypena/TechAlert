@@ -34,4 +34,8 @@ public class MainActivity extends AppCompatActivity {
         vc.connect("prod.vidyo.io", token, "DemoUser", "DemoRoom", this);
     }
 
+    public void disconnect(View v) {
+
+    }
+
 }

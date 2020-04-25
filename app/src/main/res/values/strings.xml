@@ -3,4 +3,5 @@
     <string name="start_button">start</string>
     <string name="dis_button">disconnect</string>
     <string name="con_button">connect</string>
+    <string name="text">Nothing</string>
 </resources>

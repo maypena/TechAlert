@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.FrameLayout;
 import android.view.View;
+import android.widget.TextView;
 
 import com.vidyo.VidyoClient.Connector.ConnectorPkg;
 import com.vidyo.VidyoClient.Connector.Connector;
@@ -38,9 +39,19 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
         vc.disconnect();
     }
 
-    public void onSuccess() {}
+    public void onSuccess() {
+        TextView text = (TextView)findViewById(R.id.textView1);
+        text.setText("conncted");
+    }
 
-    public void onFailure(Connector.ConnectorFailReason reason) {}
+    public void onFailure(Connector.ConnectorFailReason reason) {
+        TextView text = (TextView)findViewById(R.id.textView1);
+        text.setText("failed");
 
-    public void onDisconnected(Connector.ConnectorDisconnectReason reason){}
+    }
+
+    public void onDisconnected(Connector.ConnectorDisconnectReason reason){
+        TextView text = (TextView)findViewById(R.id.textView1);
+        text.setText("disconncted");
+    }
 }

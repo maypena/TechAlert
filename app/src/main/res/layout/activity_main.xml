@@ -19,7 +19,8 @@
         app:layout_constraintEnd_toStartOf="@+id/connect_button"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/videoFrame" />
+        app:layout_constraintTop_toBottomOf="@+id/videoFrame"
+        app:layout_constraintVertical_bias="0.241" />
 
     <Button
         android:id="@+id/connect_button"
@@ -27,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginBottom="16dp"
         android:onClick="connect"
         android:text="@string/con_button"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,20 +42,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginBottom="16dp"
         android:onClick="disconnect"
         android:text="@string/dis_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/connect_button"
-        app:layout_constraintTop_toBottomOf="@+id/videoFrame" />
+        app:layout_constraintTop_toBottomOf="@+id/videoFrame"
+        app:layout_constraintVertical_bias="0.214" />
 
     <FrameLayout
         android:id="@+id/videoFrame"
         android:layout_width="347dp"
         android:layout_height="430dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/connect_button"
@@ -64,4 +67,18 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="116dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/text"
+        app:layout_constraintBottom_toTopOf="@+id/videoFrame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

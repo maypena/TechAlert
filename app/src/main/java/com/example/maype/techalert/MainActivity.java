@@ -8,7 +8,7 @@ import android.view.View;
 import com.vidyo.VidyoClient.Connector.ConnectorPkg;
 import com.vidyo.VidyoClient.Connector.Connector;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements Connector.IConnect{
 
     private Connector vc;
     private FrameLayout videoFrame;
@@ -35,7 +35,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void disconnect(View v) {
-
+        vc.disconnect();
     }
 
+    public void onSuccess() {}
+
+    public void onFailure(Connector.ConnectorFailReason reason) {}
+
+    public void onDisconnected(Connector.ConnectorDisconnectReason reason){}
 }

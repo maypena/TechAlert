@@ -1,4 +1,4 @@
-![TechAlert Logo](https://drive.google.com/file/d/1wJeOrETKlVexGKi18AlOXJ78B2GB93cb/view?usp=sharing)
+![TechAlert Logo](https://ibb.co/QkMHsMs)
 
 # TechAlert
 

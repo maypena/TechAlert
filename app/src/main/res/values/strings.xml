@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">TechAlert</string>
     <string name="start_button">start</string>
-    <string name="dis_button">disconnect</string>
+    <string name="dis_button">stop</string>
     <string name="con_button">connect</string>
     <string name="text">Nothing</string>
 </resources>

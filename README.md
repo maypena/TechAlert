@@ -27,7 +27,7 @@ In the future, we aim to have it available on GooglePlay and AppleStore (iOS ver
 Connect an Android device (external or configured virtual emulator) to Android studio.
 Build and run the app through the android device.
 Enable camera and microphone permissions through the settings for the TechAlert app on the phone.
-Click “Start” to begin a call, “Connect” to join the call, or “Disconnect” to end the call.
+Click “Start” to begin a call, or “Disconnect” to end the call.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
